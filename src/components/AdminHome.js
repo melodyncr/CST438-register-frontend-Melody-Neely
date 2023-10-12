@@ -18,7 +18,6 @@ const AdminHome = () => {
   };
 
   const handleDeleteStudent = (studentId) => {
-    // TODO: Implement student deletion logic here
     console.log('Deleting student with ID:', studentId);
   };
 
