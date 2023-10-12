@@ -42,8 +42,8 @@ function AddStudent(props) {
         )
         .then((response) => response.json() )
         .then((data) => {
-           if (data.student_id) setMessage('Student added. ID='+data.student_id);
-           else if (data.message) setMessage('Student not added. '+data.message);
+          if (data.message) setMessage('Student not added. '+data.message);
+          else if (data) setMessage('Student added. ID='+data);
            else setMessage('Student not added. ');
         })
         .catch((err) =>  { setMessage('Error. '+err) } );
